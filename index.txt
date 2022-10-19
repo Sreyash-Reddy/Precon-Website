@@ -1,0 +1,3 @@
+https://api.countapi.xyz/create?namespace=precon&key=precon&value=0
+https://api.countapi.xyz/get/precon/precon
+https://api.countapi.xyz/update/precon/precon/?amount=1

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="resources/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precon - Tiles</title>
+    <link rel="stylesheet" href="tiles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <nav>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo"><img src="resources/logo.jpg"> PreCon</label>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>  Home</a></li>
+            <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+            <li><a href="steel.html"><i class="fas fa-align-center"></i>  steel</a></li>
+            <li><a class="active" href="#"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+            <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div id="totext">
+        <p>Key Tips about Converter:</p>
+        <p>(i)   It is draggable.</p>
+        <p>(ii) It activates on double click.</p>
+        </div>
+        <div class="navigation">
+            <div class="toggle">
+                <i class="fas fa-calculator" id="icon"></i>
+                <p id="Headline">Converter</p>
+                <p>Enter the value in inches</p>
+                <input type="number" placeholder="(in inches)" id="data">
+                <div class="button">
+                    <button id="converter" onclick="calculator()">Submit</button>
+                    </div>
+                <p id="op"></p>
+            </div>
+        </div>
+    </div>   
+    <div class="body">
+        <div class="body1">
+    <p>Enter the length of room:</p>
+    <input id="lengthRoom" type="number" placeholder="Length">
+    <p>Enter the breadth of room:</p>
+    <input id="breadthRoom" type="number" placeholder="Breadth">
+    <p>Enter the length of tile:</p>
+    <input id="lengthTile" type="number" placeholder="Length">
+    <p>Enter the breadth of tile:</p>
+    <input id="breadthTile" type="number" placeholder="Breadth">
+    <button onclick="fn()" id="button">CALCULATE</button>
+    </div>
+    <div class="body0" id="body0">
+        <p id="op1"></p>
+        <p id="op2"></p>
+    </div>
+    <div class="body2" id="body2">    
+    <p id="output1"></p>
+    <p id="output2"></p>
+    </div>
+    </div>
+    <footer>
+        <div class="container1">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="quicklinks">
+                <li><a href="index.html"><i class="fas fa-home"></i>  Home</a></li>
+            <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+            <li><a href="steel.html"><i class="fas fa-align-center"></i>  steel</a></li>
+            <li><a href="#"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+            <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+            </div>
+            <p><a href="resources/PreCon.apk"><i class="fas fa-download"></i>  Download APK</a></p>
+        </div>
+        <div class="line"></div>
+        </div>
+        <div class="last">
+        <p>Made With <i class="fas fa-heart"></i> from NITPy</p>
+        </div>
+    </footer>
+</body>
+<script src="tiles.js"></script>
+<script src="resources/jquery1.js"></script>
+<script src="resources/jquery2.js"></script>
+<script>
+$( function() {
+$( ".navigation" ).draggable();
+} );
+</script>
+<script>
+    const timeOut = document.getElementById("totext");
+    setTimeout(hideElement , 2000);
+    function hideElement(){
+        timeOut.style.display = "none";
+    }
+</script>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="resources/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precon - Steel</title>
+    <link rel="stylesheet" href="steel.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+    <nav>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo"><img src="resources/logo.jpg"> PreCon</label>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>  Home</a></li>
+            <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+            <li><a class="active" href="#"><i class="fas fa-align-center"></i>  steel</a></li>
+            <li><a href="tiles.html"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+            <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+        </ul>
+    </nav>
+    <div class="top">
+        <div class="totext" id="totext">
+        <p>Key Tips about Converter:</p>
+        <p>(i)   It is draggable.</p>
+        <p>(ii) It activates on double click.</p>
+        </div>
+        <div class="navigation">
+            <div class="toggle">
+                <i class="fas fa-calculator" id="icon"></i>
+                <p id="Headline">Converter</p>
+                <p>Enter the value in inches</p>
+                <input type="number" placeholder="(in inches)" id="data">
+                <div class="button">
+                    <button id="converter" onclick="calculator()">Submit</button>
+                    </div>
+                <p id="op"></p>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="body">
+        
+        <div class="body1">
+            <div class="body1-content">
+        <h2>Quantity Of Steel For Pillars</h2>
+        <p>Enter the number of pillars</p>
+        <input type="number" placeholder="Number" id="pillars">
+        <p>Enter the length of pillar(in feet):</p>
+        <input type="number" placeholder="Length" id="ltp">
+        <p>Enter the width of pillar(in feet):</p>
+        <input type="number" placeholder="Width" id="wtp">
+        <p>Enter the height of pillar(in feet):</p>
+        <input type="number" placeholder="Height" id="htp">
+        <p>Enter the gap between 2 stirrups(in feet):</p>
+        <input type="number" placeholder="Gap" id="gap">
+        </div>
+        <div class="button">
+        <button id="pillars" onclick="fn1()">Submit</button>
+        </div>
+    </div>
+        <div class="body2" id="body2">
+            <p id="body2-1"></p>
+            <p id="body2-2"></p>
+            <p id="body2-3"></p>
+            <p id="body2-4"></p>
+        </div>
+        <div class="body3" id="body3">
+            <p id="body3-1"></p>
+            <p id="body3-2"></p>
+            <p id="body3-4"></p>
+        </div>    
+        <div class="body3-1-1" id="body3-1-1">    
+            <p id="body3-9"></p>
+            <p id="body3-10"></p>
+            <p id="body3-11"></p>
+            <p id="body3-12"></p>
+            <p id="body3-13"></p>
+        </div>
+        <div class="body4" id="body4">
+            <p id="body4-1"></p>
+            <p id="body4-2"></p>
+            <p id="body4-3"></p>
+            <p id="body4-4"></p>
+            <p id="body4-5"></p>
+        </div>
+        <div class="body5" id="body5">
+            <p id="body5-1"></p>
+            <p id="body5-2"></p>
+        </div>
+        <div class="body6" id="body6">
+            <p id="body6-1"></p>
+            <p id="body6-2"></p>
+            <p id="body6-3"></p>
+            <p id="body6-4"></p>
+            <p id="body6-5"></p>
+            <p id="body6-6"></p>
+            <p id="body6-7"></p>
+        </div>
+        <script src="steel.js"></script>
+    </div>
+
+    <footer>
+        <div class="container1">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="quicklinks">
+                <li><a href="index.html"><i class="fas fa-home"></i>  Home</a></li>
+                <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+                <li><a href="#"><i class="fas fa-align-center"></i>  steel</a></li>
+                <li><a href="tiles.html"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+                <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+            </div>
+            <p><a href="resources/PreCon.apk"><i class="fas fa-download"></i>  Download APK</a></p>
+        </div>
+        <div class="line"></div>
+        </div>
+        <div class="last">
+        <p>Made With Love <i class="fas fa-heart"></i> from NITPy</p>
+        </div>
+    </footer>
+</body>
+  <script>
+  $( function() {
+    $( ".navigation" ).draggable();
+  } );
+  </script>
+  <script>
+      const timeOut = document.getElementById("totext");
+      setTimeout(hideElement , 2000);
+      function hideElement(){
+          timeOut.style.display = "none";
+      }
+  </script>
+</html>

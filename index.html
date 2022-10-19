@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="resources/logo.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precon</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="resources/jquery4.js"></script>
+    <script src="resources/jquery5.js"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo"><img src="resources/logo.jpg"> PreCon</label>
+        <ul>
+            <li><a class="active" href="#"><i class="fas fa-home"></i>  Home</a></li>
+            <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+            <li><a href="steel.html"><i class="fas fa-align-center"></i>  steel</a></li>
+            <li><a href="tiles.html"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+            <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+        </ul>
+    </nav>
+
+    <div class="body">
+        <div class="body0">
+            <h2>Welcome To Our Website</h2>
+        </div>
+        <div class="body1" id="body1">
+            <h2><span class="auto-type"></span></h2>
+        </div>
+        <div class="body5"><h2> How Accurate Are Our Calculations</h2></div>
+        <div class="body2">
+    
+            <div class="wrapper">
+                <div class="card">
+                    <div class="circle">
+                        <div class="prog" id="prog1"></div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="text">Wall</div>
+                </div>
+                <div class="card steel">
+                    <div class="circle">
+                        <div class="prog" id="prog2"></div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="text">Steel</div>
+                </div>
+                <div class="card tiles">
+                    <div class="circle">
+                        <div class="prog" id="prog3"></div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="text">Tiles</div>
+                </div>
+                <div class="card paint">
+                    <div class="circle">
+                        <div class="prog" id="prog4"></div>
+                        <div class="box">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="text">Paint</div>
+                </div>
+            </div>
+        </div>
+        <div class="body3">
+            <h2 id="count"></h2>
+        </div>
+    </div>
+    <footer>
+        <div class="container1">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="quicklinks">
+                <li><a href="#"><i class="fas fa-home"></i>  Home</a></li>
+                <li><a href="wall.html"><i class="fas fa-table"> </i> Wall</a></li>
+                <li><a href="steel.html"><i class="fas fa-align-center"></i>  steel</a></li>
+                <li><a href="tiles.html"><i class="fas fa-chess-board"></i>  Tiles</a></li>
+                <li><a href="paint.html"><i class="fas fa-paint-roller"></i>  Paint</a></li>
+            </div>
+            <p><a href="resources/PreCon.apk"><i class="fas fa-download"></i>  Download APK</a></p>
+        </div>
+        <div class="line"></div>
+        </div>
+        <div class="last">
+        <p>Made With Love <i class="fas fa-heart"></i> from NITPy</p>
+        </div>
+    </footer>
+    
+</body>
+<script>
+</script>
+<script src="resources/jquery3.js"></script>
+<script>
+    var typed = new Typed(".auto-type",{
+        strings: ["Calculations Done Easily.","Cost Estimations Done Accurately..","House Built Perfectly..."],
+        typeSpeed:100,
+        backSpeed:100,
+        loop: true
+    })
+</script>
+<script src="home.js"></script>
+</html>
